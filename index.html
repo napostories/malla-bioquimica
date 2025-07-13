@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Bioquímica 2022</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Curricular de Bioquímica</h1>
+
+  <div class="semestre">
+    <h2>1º Semestre</h2>
+    <label><input type="checkbox" class="curso" data-curso="BIO141C"> BIO141C – Biología Celular</label><br>
+    <label><input type="checkbox" class="curso" data-curso="QIM100I"> QIM100I – Química General I</label><br>
+    <label><input type="checkbox" class="curso" data-curso="MAT1000"> MAT1000 – Pre-Cálculo</label><br>
+    <label><input type="checkbox" class="curso" data-curso="FIS109C"> FIS109C – Física para Ciencias</label>
+  </div>
+
+  <div class="semestre">
+    <h2>2º Semestre</h2>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="QIM100A" data-prerreq="QIM100I" disabled> QIM100A – Química General II</label><br>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="MAT1100" data-prerreq="MAT1000" disabled> MAT1100 – Cálculo I</label><br>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="QIM101Q" data-prerreq="QIM100I" disabled> QIM101Q – Lab. Química General</label><br>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="FIS0109" data-prerreq="FIS109C" disabled> FIS0109 – Lab. Física para Ciencias</label>
+  </div>
+
+  <div class="semestre">
+    <h2>3º Semestre</h2>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="QIM109A" data-prerreq="QIM100A" disabled> QIM109A – Química Analítica I</label><br>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="BIO152C" data-prerreq="BIO141C" disabled> BIO152C – Bases Físicas de los Procesos Biológicos</label><br>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="BIO242C" data-prerreq="BIO141C" disabled> BIO242C – Bioestadística</label>
+  </div>
+
+  <div class="semestre">
+    <h2>4º Semestre</h2>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="BIO226E" data-prerreq="BIO141C" disabled> BIO226E – Genética y Evolución</label><br>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="BIO225C" data-prerreq="BIO141C" disabled> BIO225C – Fisiología y Bioquímica Vegetal</label>
+  </div>
+
+  <div class="semestre">
+    <h2>5º Semestre</h2>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="BIO257C" data-prerreq="BIO152C" disabled> BIO257C – Bioquímica</label><br>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="BIO266D" data-prerreq="BIO257C" disabled> BIO266D – Lab. Bioquímica I y Biología Celular</label><br>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="BIO299L" data-prerreq="BIO257C" disabled> BIO299L – Lab. de Fisiología</label>
+  </div>
+
+  <div class="semestre">
+    <h2>6º Semestre</h2>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="BIO299E" data-prerreq="BIO257C" disabled> BIO299E – Fisiología</label><br>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="BIO288C" data-prerreq="BIO266D" disabled> BIO288C – Genética Molecular</label><br>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="BIO266E" data-prerreq="BIO266D" disabled> BIO266E – Lab. Bioquímica II y Genética Molecular</label>
+  </div>
+
+  <div class="semestre">
+    <h2>7º Semestre</h2>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="QIM114" data-prerreq="BIO266D" disabled> QIM114 – Química Física I</label>
+  </div>
+
+  <div class="semestre">
+    <h2>8º Semestre</h2>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="BIO296F" data-prerreq="BIO266E" disabled> BIO296F – Seminario de Investigación</label>
+  </div>
+
+  <div class="semestre">
+    <h2>9º Semestre</h2>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="BIO258F" data-prerreq="BIO266E" disabled> BIO258F – Práctica Extramural</label>
+  </div>
+
+  <div class="semestre">
+    <h2>10º Semestre</h2>
+    <label><input type="checkbox" class="curso bloqueado" data-curso="BIO3319" data-prerreq="BIO296F" disabled> BIO3319 – Técnicas Avanzadas en Bioquímica</label>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
